@@ -14,6 +14,7 @@ public class room_types
 		// TODO: Add constructor logic here
 		//
 	}
+	public int id { get; set; }
 
 	public string name { get; set; }
 }

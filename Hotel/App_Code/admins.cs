@@ -14,8 +14,10 @@ public class admins
 		// TODO: Add constructor logic here
 		//
 	}
+	public int id { get; set; }
 
 	public string phone { get; set; }
+
 	public string password { get; set; }
 
 }

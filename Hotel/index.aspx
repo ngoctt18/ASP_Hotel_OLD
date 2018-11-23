@@ -4,12 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<title>Dream Hotel a Hotels and Restaurants Category Flat Bootstrap responsive Website Template | Home :: w3layouts</title>
+<title>ASP | Website khách sạn</title>
 
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Dream Hotel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="keywords" content="ASP | Website khách sạn" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--// Meta tag Keywords -->
@@ -32,28 +32,27 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //js -->
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
+<form id="form1" runat="server">
 			
 <!-- header -->
 <div class="header">
 	<div class="agile-top-header">
 	<div class="banner-agile-top">
 		<div class="number">
-			<h3><i class="fa fa-phone" aria-hidden="true"></i> +91 080 987 6541</h3>
+			<h3><i class="fa fa-phone" aria-hidden="true"></i> +84 975 853 528</h3>
 		</div>
 				<div class="top-icons">
 				<ul>
-					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li><a href="fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 				<div class="clearfix"></div>
 	</div>
 		<div class="logo">
-			<h1><a href="index.html">Dream<span>Hotel</span></a></h1>
+			<h1><a href="index.aspx"><span>Website khách sạn</span></a></h1>
 		</div>
 		<!-- navigation -->
 		<div class="top-left">
@@ -72,12 +71,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						 <nav class="linkEffects linkHoverEffect_2">
 							<ul>
-								<li><a href="index.html" data-link-alt="Home" class="active"><span>Home</span></a></li> 
-								<li><a href="#about" data-link-alt="about" class="scroll"><span>About</span></a></li> 
-								<li><a href="#services" data-link-alt="services" class="scroll"><span>Services</span></a></li> 
-								<li><a href="#gallery" data-link-alt="gallery" class="scroll"><span>Gallery</span></a></li> 
-								<li><a href="#testimonials" data-link-alt="testimonials" class="scroll"><span>Testimonials</span></a></li> 
-								<li><a href="#contact" data-link-alt="Contact Us" class="scroll"><span>Contact Us</span></a></li> 
+								<li><a href="index.aspx" data-link-alt="Home" class="active"><span>Trang chủ</span></a></li> 
+								<li><a href="#about" data-link-alt="about" class="scroll"><span>Giới thiệu</span></a></li> 
+								<li><a href="#services" data-link-alt="services" class="scroll"><span>Dịch vụ</span></a></li> 
+								<li><a href="#gallery" data-link-alt="gallery" class="scroll"><span>Thư viện</span></a></li> 
+								<li><a href="#testimonials" data-link-alt="testimonials" class="scroll"><span>Nhận xét</span></a></li> 
+								<li><a href="#contact" data-link-alt="Contact Us" class="scroll"><span>Liên hệ</span></a></li> 
 							</ul>
 						</nav>
 						
@@ -85,7 +84,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</nav>
 				<div class="search">
 						<form action="#" method="post">
-							<input type="search" placeholder="Search..." name="Search" required="">
+							<input type="search" placeholder="Tìm kiếm..." name="Search" required="">
 							<input type="submit" value="">
 						</form>
 					</div>
@@ -136,7 +135,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
-										<h4>Our Dream hotel</h4>
+										<h4>Về khách sạn của chúng tôi</h4>
 										<img src="images/popup.jpg" alt=" " class="img-responsive"/>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
 									</div>
@@ -152,17 +151,17 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<div class="main" id="main">
 		<div class="w3layouts_main_grid">
 		<div class="booking-form-head-agile">
-		<h3>Hotel Booking form</h3>
+		<h3>Đặt phòng khách sạn</h3>
 		</div>
 			<form action="#" method="post" class="w3_form_post">
 				<div class="w3_agileits_main_grid w3l_main_grid">
 					<div class="agileits_grid">
-						<h5>Name * </h5>
+						<h5>Họ và tên * </h5>
 						<div class="nam">
-							<input type="text" name="First name" placeholder="First Name" required="">
+							<asp:TextBox ID="txtF_name" runat="server" placeholder="Tên" required="" />
 						</div>
 						<div class="nam1">
-							<input type="text" name="Last name" placeholder="Last Name" required="">
+							<asp:TextBox ID="txtL_name" runat="server" placeholder="Họ đệm" required="" />
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -170,24 +169,20 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3_agileits_main_grid w3l_main_grid">
 					<div class="agileits_grid">
 						<h5>E-mail </h5>
-							<input type="email" name="Email" placeholder="ex : myname@gmail.com" required="">
+							<asp:TextBox ID="txtEmail" type="email" runat="server" placeholder="ex : myname@gmail.com" required="" />
 					</div>
 				</div>
 				<div class="agileits_main_grid w3_agileits_main_grid">
 					<div class="wthree_grid">
-						<h5>Room Type</h5>
-						<select id="category" name="category" required="">
-							<option value=" ">None</option>
-							<option value="category1">Single Room</option>
-							<option value="category2">Double Room</option>
-							<option value="category3">Suit Room</option>
-							
-						</select>
+						<h5>Loại phòng</h5>
+						<asp:DropDownList ID="category" required="" runat="server">
+							<%-- Danh sách loại phòng --%>
+						</asp:DropDownList>
 					</div>
 				</div>
 				<div class="agileits_w3layouts_main_grid w3ls_main_grid">
 					<div class="agileinfo_grid">
-					<h5>Check In & Time *</h5>
+					<h5>Ngày & giờ nhận phòng *</h5>
 						
 						<div class="agileits_w3layouts_main_gridl">
 							<input class="date" id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '08/13/2016';}" required="">
@@ -200,10 +195,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</div>
 				<div class="agileits_w3layouts_main_grid w3ls_main_grid">
 					<div class="agileinfo_grid">
-					<h5>Check Out & Time *</h5>
+					<h5>Ngày & giờ trả phòng *</h5>
 						
 						<div class="agileits_w3layouts_main_gridl">
-							<input class="date" id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '08/13/2016';}" required="">
+							<%--<input class="date" id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '08/13/2016';}" required="">--%>
+							<asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
 						</div>
 						<div class="agileits_w3layouts_main_gridr">
 							<input type="time" name="Time" required="">
@@ -213,21 +209,20 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</div>
 				<div class="agileinfo_main_grid">
 					<div class="agileits_w3layouts_grid">
-						<h5>Number of Guests *</h5>
-						<select id="category1" name="category1" required="">
-							<option value=" ">01</option>
-							<option value="category2">02</option>
-							<option value="category3">03</option>
-							<option value="category4">04</option>
-							<option value="category2">05</option>
-							<option value="category3">06</option>
-						</select>
+						<h5>Số lượng khách *</h5>
+						<asp:DropDownList ID="category1" runat="server" required="">
+							<asp:ListItem Value="1" Text="1" />
+							<asp:ListItem Value="2" Text="2" />
+							<asp:ListItem Value="3" Text="3" />
+							<asp:ListItem Value="4" Text="4" />
+							<asp:ListItem Value="5" Text="5" />
+						</asp:DropDownList>
 					</div>
 				</div>
 				<div class="w3_main_grid">
-					
+					<asp:Label ID="err_msg" runat="server" />
 					<div class="w3_main_grid_right">
-						<input type="submit" value="Book Now">
+						<asp:Button ID="btn_BookRoom" runat="server" Text="Đặt ngay" OnClick="btn_BookRoom_Click" />
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -650,9 +645,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</script>
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 				<script src="js/SmoothScroll.min.js"></script>
+				<script type="text/javascript">
+				$(function () {
+					$("[id*=txtDate]").datepicker({
+						// Hiện ra form nhập date
+					});
+				});
+				</script>
 
-
-        </div>
-    </form>
+</form>
 </body>
 </html>
