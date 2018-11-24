@@ -27,15 +27,16 @@ public partial class index : System.Web.UI.Page
 			schedule.f_name = txtF_name.Text;
 			schedule.l_name = txtL_name.Text;
 			schedule.email = txtEmail.Text;
-			//schedule.room_type_id = int.Parse(category.SelectedValue);
-			//schedule.date_in = 
-			//schedule.date_out = txtEmail.Text;
-			//schedule.time_in = txtEmail.Text;
-			//schedule.time_out = txtEmail.Text;
-			//schedule.num_guest = txtEmail.Text;
+			schedule.room_type_id = int.Parse(category.SelectedValue);
+			schedule.date_in = DateTime.Parse(txtDateIn.Text);
+			schedule.date_out = DateTime.Parse(txtDateOut.Text);
+			schedule.time_in = DateTime.Parse(txtTimeIn.Text);
+			schedule.time_out = DateTime.Parse(txtTimeOut.Text);
+			schedule.num_guest = int.Parse(category1.SelectedValue);
 
+			data.ThemDatPhong(schedule);
 
-			err_msg.ForeColor = System.Drawing.Color.Green;
+			err_msg.ForeColor = System.Drawing.Color.Aqua;
 			err_msg.Text = "Bạn đã thêm đặt phòng thành công!";
 		}
 		catch (Exception ex)

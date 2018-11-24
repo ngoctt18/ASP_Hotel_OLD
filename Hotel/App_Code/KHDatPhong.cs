@@ -27,6 +27,7 @@ public class KHDatPhong
 		while (rd.Read())
 		{
 			room_types room = new room_types();
+			room.id = (int)rd["id"];
 			room.name = (string)rd["name"];
 			li.Add(room);
 		}
