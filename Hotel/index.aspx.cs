@@ -10,6 +10,7 @@ public partial class index : System.Web.UI.Page
 	KHDatPhong data = new KHDatPhong();
 	protected void Page_Load(object sender, EventArgs e)
 	{
+		RandomSlide();
 		if (!IsPostBack)
 		{
 			category.DataSource = data.getRoomTypes();
@@ -44,5 +45,17 @@ public partial class index : System.Web.UI.Page
 			err_msg.ForeColor = System.Drawing.Color.Red;
 			err_msg.Text = "Đã xảy ra lỗi: " + ex.Message;
 		}
+	}
+
+	protected void Timer1_Tick(object sender, EventArgs e)
+	{
+		RandomSlide();
+	}
+
+	private void RandomSlide()
+	{
+		Random r = new Random();
+		int n = r.Next(1, 5);
+		imgSlide.ImageUrl = "images/ban" + n + ".jpg";
 	}
 }

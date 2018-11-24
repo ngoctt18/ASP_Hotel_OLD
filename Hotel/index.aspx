@@ -47,8 +47,15 @@ img#imgSlide {
 <div class="slider">
 	<div class="callbacks_container">
 		<ul class="rslides" id="slider">
-			<li>
-				<img src="images/ban2.jpg" id="imgSlide" alt="Alternate Text" />
+			<li>	
+				<!--Slide random ASP-->
+				<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+					<ContentTemplate>
+						<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+						<asp:Timer ID="Timer1" runat="server" Interval="5000" OnTick="Timer1_Tick"></asp:Timer>
+						<asp:Image ID="imgSlide" runat="server" ImageUrl="images/ban2.jpg" />
+					</ContentTemplate>
+				</asp:UpdatePanel>
 				<div class="slider-info">
 					<h3>Welcome!</h3>
 					<p>Khách sạn Welcome là khách sạn Quốc tế đầu tiên tại Hà Nội với 218 phòng nghỉ tiện nghi, hiện đại và sang trọng. Đặc biệt, với vị trí trung tâm thuận lợi kề bên Nhổn yên bình, khách sạn là điểm dừng chân lý tưởng của du khách trong và ngoài nước mỗi khi có chuyến công tác hay du lịch cùng bạn bè và người thân.</p>
